@@ -6,3 +6,6 @@ spring:
         url: jdbc:mysql://aluguel-cars.cvksisiyyypp.us-east-2.rds.amazonaws.com:3306/aluguel
         username: admin
         password: rootroot
+    jpa:
+      properties:
+          show-sql: true
