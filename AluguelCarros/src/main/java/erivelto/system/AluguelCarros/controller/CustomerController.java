@@ -18,7 +18,7 @@ public class CustomerController {
     private CustomerService service;
 
     @PostMapping
-    public ResponseEntity<?> createVehicle(@Validated @RequestBody CustomerDTO data, UriComponentsBuilder uriBuilder){
+    public ResponseEntity<?> create(@Validated @RequestBody CustomerDTO data, UriComponentsBuilder uriBuilder){
         var currentCustomer = new Customer(data);
         service.saveCustomer(currentCustomer);
 
